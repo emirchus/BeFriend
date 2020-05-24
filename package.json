@@ -1,0 +1,16 @@
+{
+  "name": "befriend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron src/index.js"
+  },
+  "author": "MrEmii",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^5.0.1",
+    "electron-reload": "^1.4.0",
+    "jquery": "^3.4.1"
+  }
+}

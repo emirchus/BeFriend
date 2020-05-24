@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BeFriend</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/fontawesome/all.css">
+    <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet" href="./assets/home.css">
+
+</head>
+
+<body id="render">
+   
+    <div class="app" >
+        <div class="titlebar">
+            <h5>BeFriend
+                <span>Open, Type, Send, Repeat</span>
+            </h5>
+            <div class="dragreg">
+            </div>
+            <div class="actionbar">
+                <ul>
+                    <li id="minimize" class="far fa-square minb"></li>
+                    <li id="close" class="fas fa-times"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="app" class="mount">
+            <home></home>
+            <div id="login" class="login active">
+                <div class="fcont">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="">
+                        <h5>Be<span>Friend</span></h5>
+                    </div>
+                    <div class="extf">
+                        <button class="socialbtn fb"><i class="fab fa-facebook-f"></i> Sign in with Facebook</button>
+                        <button class="socialbtn gl"><i class="fab fa-google"></i> Sign in with Google</button>
+                    </div>
+                    <form id="loginform">
+                        <input type="text" name="" id="username" placeholder="username / email">
+                        <input type="text" name="" id="password" placeholder="password" readonly>
+                        <label>Is a secure house? <input type="checkbox" name="" id=""> <span></span></label>
+                        <input type="submit" value="Sign in">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/main.js"></script>
+    <script>
+        require('./view-loader/loader')
+    </script>
+</body>
+
+</html>
